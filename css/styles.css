@@ -6,26 +6,80 @@
   --active-okean-color: #404bbf;
   --footer-text-color: #e7e9fc;
   --portfolio-nav-color: #f4f4fd;
+  --padding-top: 120px;
+  --padding-bottom: 120px;
+  --max-width: 264px;
+  --margin-bottom-text: 8px;
+  --mardin-bottom-subtitle: 72px;
+  --margin-bottom-img: 32px;
 }
+
+/* * { */
+/* box-sizing: border-box; */
+/* margin: 0; */
+/* padding: 0; */
+/* } */
+
+/* html, */
+/* body { */
+/* height: 100%; */
+/* margin: 0; */
+/* padding: 0; */
+/* box-sizing: border-box; */
+/* } */
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 address {
   font-style: normal;
 }
 
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  max-width: 1158px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid salmon;
 }
 
 .logo {
@@ -39,11 +93,11 @@ address {
   color: var(--normal-iris-color);
 }
 
-.logo.dark span {
+.logo-dark {
   color: var(--title-color);
 }
 
-.logo.light span {
+.logo-light {
   color: var(--footer-text-color);
 }
 
@@ -77,6 +131,11 @@ address {
 /* font-style: normal; */
 /* } */
 /*  */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header-menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -106,6 +165,8 @@ address {
 
 .hero {
   background-color: var(--title-color);
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 
 .hero-title {
@@ -115,6 +176,8 @@ address {
   line-height: 1.07;
   text-align: center;
   color: var(--second-text-color);
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -137,6 +200,8 @@ address {
 /*! ----------UBER UNS -------*/
 
 .uberuns {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
 }
 
 .uberuns-list {
@@ -147,18 +212,22 @@ address {
 
 .uberuns-subtitel {
   text-align: left;
+  margin-bottom: var(--margin-bottom-text);
 }
 
 .uberuns-text {
   text-align: left;
+  max-width: var(--max-width);
 }
 
 /*! ----------WORK -------*/
 
 .work {
+  padding-bottom: var(--padding-bottom);
 }
 
 .work-title {
+  margin-bottom: var(--mardin-bottom-subtitle);
 }
 
 .work-list {
@@ -170,9 +239,12 @@ address {
 /*! ----------OUR TEAM -------*/
 
 .team {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
 }
 
 .team-title {
+  margin-bottom: var(--mardin-bottom-subtitle);
 }
 
 .team-list {
@@ -181,8 +253,13 @@ address {
 .team-item {
 }
 
+.team-img {
+  margin-bottom: var(--margin-bottom-img);
+}
+
 .team-subtitel {
   text-align: center;
+  margin-bottom: var(--margin-bottom-text);
 }
 
 .team-prof {
@@ -193,7 +270,13 @@ address {
 
 .footer {
   background-color: var(--title-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
+
+.footer-logo {
+}
+
 .foot {
   font-size: 16px;
   /* font-weight: 400; */
@@ -201,14 +284,19 @@ address {
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--footer-text-color);
+  max-width: var(--max-width);
+  margin-top: 16px;
 }
 
 /*! ----------PORTFOLIO -------*/
 
 .portfolio {
+  padding-top: 96px;
+  padding-bottom: var(--padding-bottom);
 }
 
 .portfolio-filter {
+  padding-bottom: 72px;
 }
 
 .portfolio-filter-item {
@@ -231,7 +319,13 @@ address {
 .portfolio-item {
 }
 
+.portfolio-description {
+  margin-top: var(--margin-bottom-img);
+  margin-bottom: var(--margin-bottom-img);
+}
+
 .portfolio-subtitel {
+  margin-bottom: var(--margin-bottom-text);
 }
 
 .portfolio-text {
