@@ -53,9 +53,9 @@ ol {
   margin: 0;
 }
 
-address {
-  font-style: normal;
-}
+/* address { */
+/* font-style: normal; */
+/* } */
 
 button {
   cursor: pointer;
@@ -70,6 +70,8 @@ img {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -144,6 +146,10 @@ img {
   color: var(--title-color);
 }
 
+.header-menu-link .current {
+  color: var(--active-okean-color);
+}
+
 .header-menu-link:active {
   color: var(--active-okean-color);
 }
@@ -167,6 +173,7 @@ img {
   background-color: var(--title-color);
   padding-top: 188px;
   padding-bottom: 292px;
+  text-align: center;
 }
 
 .hero-title {
@@ -181,20 +188,25 @@ img {
 }
 
 .hero-btn {
+  min-width: 169px;
+  padding: 16px 32px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   /* letter-spacing: 4%; */
-  /* text-align: left; */
   background-color: var(--normal-iris-color);
   color: var(--second-text-color);
-  text-align: center;
+  /* text-align: center; */
   cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 
-.hero-btn {
+.hero-btn:hover {
   background-color: var(--active-okean-color);
+  border: 1px solid transparent;
 }
 
 /*! ----------UBER UNS -------*/
@@ -208,6 +220,7 @@ img {
 }
 
 .uberuns-item {
+  width: 264px;
 }
 
 .uberuns-subtitel {
@@ -241,6 +254,7 @@ img {
 .team {
   padding-top: var(--padding-top);
   padding-bottom: var(--padding-bottom);
+  background-color: #f4f4fd;
 }
 
 .team-title {
