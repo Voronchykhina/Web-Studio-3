@@ -12,6 +12,7 @@
   --margin-bottom-text: 8px;
   --mardin-bottom-subtitle: 72px;
   --margin-bottom-img: 32px;
+  --margin-right: 24px;
 }
 
 /* * { */
@@ -138,7 +139,34 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.logo-link {
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
+  /* margin-right: 76px; */
+}
+
+.header-menu {
+  display: flex;
+  margin-left: 76px;
+  /* margin-right: 332px; */
+}
+
+.header-menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .header-menu-link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -146,7 +174,7 @@ img {
   color: var(--title-color);
 }
 
-.header-menu-link .current {
+.header-menu-link.current {
   color: var(--active-okean-color);
 }
 
@@ -154,7 +182,14 @@ img {
   color: var(--active-okean-color);
 }
 
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
 .header-contact-link {
+  display: block;
+
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
@@ -163,8 +198,8 @@ img {
   color: var(--main-text-color);
 }
 
-.header-menu-link:active {
-  color: var(--active-okean-color);
+.header-contact-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 /*! ----------HERO-------*/
@@ -184,7 +219,7 @@ img {
   text-align: center;
   color: var(--second-text-color);
   max-width: 496px;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -217,10 +252,15 @@ img {
 }
 
 .uberuns-list {
+  display: flex;
 }
 
 .uberuns-item {
   width: 264px;
+}
+
+.uberuns-item:not(:last-child) {
+  margin-right: var(--margin-right);
 }
 
 .uberuns-subtitel {
@@ -244,9 +284,14 @@ img {
 }
 
 .work-list {
+  display: flex;
 }
 
 .work-item {
+}
+
+.work-item:not(:last-child) {
+  margin-right: var(--margin-right);
 }
 
 /*! ----------OUR TEAM -------*/
@@ -262,9 +307,15 @@ img {
 }
 
 .team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-item {
+}
+
+.team-item:not(:last-child) {
+  margin-right: var(--margin-right);
 }
 
 .team-img {
@@ -310,10 +361,16 @@ img {
 }
 
 .portfolio-filter {
+  display: flex;
+  justify-content: center;
   padding-bottom: 72px;
 }
 
 .portfolio-filter-item {
+}
+
+.portfolio-filter-item:not(:last-child) {
+  margin-right: var(--margin-right);
 }
 
 .portfolio-btn {
@@ -321,6 +378,7 @@ img {
   background-color: var(--portfolio-nav-color);
   color: var(--normal-iris-color);
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--active-okean-color);
@@ -328,9 +386,17 @@ img {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+  margin-right: var(--margin-right);
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .portfolio-description {
