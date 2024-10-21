@@ -377,6 +377,13 @@ img {
   cursor: pointer;
   background-color: var(--portfolio-nav-color);
   color: var(--normal-iris-color);
+  /* width: Hug (78px)px; */
+  /* height: Hug (48px)px; */
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--footer-text-color);
+  /* opacity: 0px; */
+  /*  */
 }
 
 .portfolio-btn:hover,
@@ -393,6 +400,8 @@ img {
 .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
   margin-right: var(--margin-right);
+
+  border: 1px solid var(--footer-text-color);
 }
 
 .portfolio-item:nth-child(3n) {
@@ -402,6 +411,7 @@ img {
 .portfolio-description {
   margin-top: var(--margin-bottom-img);
   margin-bottom: var(--margin-bottom-img);
+  padding-left: 16px;
 }
 
 .portfolio-subtitel {
